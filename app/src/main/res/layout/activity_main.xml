@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ПРИЗЫВНИКИ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фамилия:"/>
+    <EditText
+        android:id="@+id/pole_fam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Имя:"/>
+    <EditText
+        android:id="@+id/pole_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отчество:"/>
+    <EditText
+        android:id="@+id/pole_otch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Возраст:"/>
+    <EditText
+        android:id="@+id/pole_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Категория годности:"/>
+    <Spinner
+        android:id="@+id/pole_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/knopka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ДОБАВИТЬ"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/schetchik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Записей: 0"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@+id/spisok"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
